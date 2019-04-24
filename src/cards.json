@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "click-patterns-01",
+    "image": "../public/img/click-patterns-01.png"
+  },
+  {
+    "id": 2,
+    "name": "click-patterns-02",
+    "image": "../public/img/click-patterns-02.png"
+  },
+  {
+    "id": 3,
+    "name": "click-patterns-03",
+    "image": "../public/img/click-patterns-03.png"
+  },
+  {
+    "id": 4,
+    "name": "click-patterns-04",
+    "image": "../public/img/click-patterns-04.png"
+  },
+  {
+    "id": 5,
+    "name": "click-patterns-05",
+    "image": "../public/img/click-patterns-05.png"
+  },
+  {
+    "id": 6,
+    "name": "click-patterns-06",
+    "image": "../public/img/click-patterns-06.png"
+  },
+  {
+    "id": 7,
+    "name": "click-patterns-07",
+    "image": "../public/img/click-patterns-07.png"
+  },
+  {
+    "id": 8,
+    "name": "click-patterns-08",
+    "image": "../public/img/click-patterns-08.png"
+  },
+  {
+    "id": 9,
+    "name": "click-patterns-09",
+    "image": "../public/img/click-patterns-09.png"
+  },
+  {
+    "id": 10,
+    "name": "click-patterns-10",
+    "image": "../public/img/click-patterns-10.png"
+  },
+  {
+    "id": 13,
+    "name": "click-patterns-13",
+    "image": "../public/img/click-patterns-13.png"
+  },
+  {
+    "id": 12,
+    "name": "click-patterns-12",
+    "image": "../public/img/click-patterns-12.png"
+  }
+]
