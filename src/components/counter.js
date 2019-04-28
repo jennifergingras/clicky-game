@@ -1,5 +1,4 @@
 import React from "react";
-import ImageBox from "./imageBox"
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -8,7 +7,7 @@ class Counter extends React.Component {
     count: 0
   };
 
-  
+
 
   // count is going to have to change on click of card components
 

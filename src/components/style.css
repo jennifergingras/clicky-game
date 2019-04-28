@@ -1,7 +1,25 @@
-.card {
-  width: 150px;
+body {
+  background-color: black;
 }
 
-.click-image {
-  width: 100px;
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
 }
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: auto;
+  width: 80%;
+}
+
+.click-img {
+  width: 100%;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+
+

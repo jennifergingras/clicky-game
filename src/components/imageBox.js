@@ -3,9 +3,8 @@ import "./style.css"
 
 const ImageBox = props => {
   return (
-    <div className="card">
-      <img className="click-img" alt={props.image} src={require(`../img/${props.image}`)} />
-
+    <div className="card" >
+      <img className="click-img" alt={props.image} id={props.id} src={require(`../img/${props.image}`)} onClick={props.cardClick}/>
     </div>
   );
 };
