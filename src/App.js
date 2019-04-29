@@ -4,8 +4,6 @@ import ImageBox from "./components/imageBox";
 import cards from "./cards.json";
 import Counter from "./components/counter"
 
-let clickedArr = [];
-
 class App extends Component {
   state = {
     cards,
@@ -19,15 +17,20 @@ class App extends Component {
     console.log("click!");
     console.log(card.target.id);
     // if the image is in the clicked array the game is over
-    if (clickedArr.includes(card.target.id)) {
+    if (this.state.clickedArr.includes(parseInt(card.target.id))) {
       alert("already clicked");
     } else {
       // when an image is clicked it goes into the clicked array
-      clickedArr.push(card.target.id);
-      console.log(clickedArr);
-      // the images randomly shuffle
-      // this.state.cards.sort()
+      this.state.clickedArr.push(parseInt(card.target.id));
+      console.log(this.state.clickedArr);
+      // the images randomly shuffle - ARRAY SHUFFLES BUT CARDS DO NOT MOVE YET
+      this.setState(this.state.cards.sort(() => Math.random() - 0.5));
+      console.log(cards);
+
+
       // the score goes up by one
+      this.setState({ score: this.state.score + 1 });
+
     }
 
     // when score is 12 - the game is won
