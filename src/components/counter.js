@@ -1,31 +1,17 @@
 import React from "react";
+import "./style.css";
 
 // By extending the React.Component class, Counter inherits functionality from it
-class Counter extends React.Component {
-  // Setting the initial state of the Counter component
-  state = {
-    count: 0
-  };
+const Counter = (props) => {
 
-
-
-  // count is going to have to change on click of card components
-
-
-  //
-  render() {
-    return (
+  return (
+    <div>
+      <p className="score">Score: {props.score}</p>
       <div>
-        <p>Score: {this.state.count}</p>
-        <div>
-          <p>High Score:</p>
-        </div>
+        <p className="highScore">High Score: {props.highScore}</p>
       </div>
-    )
-  }
-
-
+    </div>
+  )
 }
-
 
 export default Counter;

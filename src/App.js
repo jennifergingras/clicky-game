@@ -3,6 +3,7 @@ import Header from "./components/header"
 import ImageBox from "./components/imageBox";
 import cards from "./cards.json";
 import Counter from "./components/counter"
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -11,6 +12,8 @@ class App extends Component {
     highScore: 0,
     clickedArr: []
   };
+
+
 
   // Click event - 
   cardClick = (card) => {
@@ -23,25 +26,38 @@ class App extends Component {
       // when an image is clicked it goes into the clicked array
       this.state.clickedArr.push(parseInt(card.target.id));
       console.log(this.state.clickedArr);
-      // the images randomly shuffle - ARRAY SHUFFLES BUT CARDS DO NOT MOVE YET
+      // the images randomly shuffle
       this.setState(this.state.cards.sort(() => Math.random() - 0.5));
+
       console.log(cards);
 
-
       // the score goes up by one
-      this.setState({ score: this.state.score + 1 });
-
+      this.setState({ score: this.state.score + 1 }); 
     }
 
     // when score is 12 - the game is won
+    if (this.state.score === 12) {
+      alert("winner!");
+      this.setState({
+        score: 0,
+        highScore: 0,
+        
+
+      });
+    };
   }
 
 
   render() {
     return (
       <div>
-        <Header />
-        <Counter />
+        <div className="top-wrapper">
+          <Header />
+          <Counter
+            score={this.state.score}
+            highScore={this.state.highScore}
+          />
+        </div>
         <div className="card-wrapper">
           {this.state.cards.map(card => (
             <ImageBox
