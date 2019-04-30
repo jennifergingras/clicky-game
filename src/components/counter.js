@@ -7,9 +7,8 @@ const Counter = (props) => {
   return (
     <div>
       <p className="score">Score: {props.score}</p>
-      <div>
-        <p className="highScore">High Score: {props.highScore}</p>
-      </div>
+      {/* <p className="highScore">High Score: {props.highScore}</p> */}
+      <h4 className="message">{props.message}</h4>
     </div>
   )
 }
